@@ -172,11 +172,11 @@ public class SwiftHUD {
     private func imageWithStyle(style:SwiftHUDStyle) -> UIImage? {
         switch style {
         case .Error:
-            return UIImage(named: "swift_alert_hud_error")
+            return SwiftImageWithName("swift_alert_hud_error")
         case .Info:
-            return UIImage(named: "swift_alert_hud_info")
+            return SwiftImageWithName("swift_alert_hud_info")
         case .Success:
-            return UIImage(named: "swift_alert_hud_success")
+            return SwiftImageWithName("swift_alert_hud_success")
         case .None,.Loading:
             return nil
         }
@@ -203,4 +203,21 @@ public class SwiftHUD {
         self._titleLabel.textColor = UIColor.whiteColor()
         self._titleLabel.textAlignment = .Center
     }
+}
+
+func SwiftImageWithName(imageName:String?) -> UIImage? {
+    guard let imageName:String = imageName else {
+        return nil
+    }
+    let name = "\(imageName)@\(Int(UIScreen.mainScreen().scale))x"
+    guard let path:String = NSBundle.mainBundle().pathForResource("SwiftHUD", ofType: "bundle") else {
+        return nil
+    }
+    guard let swiftBundle:NSBundle = NSBundle(path: path) else {
+        return nil
+    }
+    guard let imagePath:String = swiftBundle.pathForResource(name, ofType: "png") else {
+        return nil
+    }
+    return UIImage(contentsOfFile: imagePath)
 }

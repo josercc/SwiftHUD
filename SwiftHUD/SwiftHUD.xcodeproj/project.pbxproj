@@ -7,15 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D3DDF601D59A9B50064D63F /* swift_alert_hud_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DDF571D59A9B50064D63F /* swift_alert_hud_error.png */; };
-		5D3DDF611D59A9B50064D63F /* swift_alert_hud_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DDF581D59A9B50064D63F /* swift_alert_hud_error@2x.png */; };
-		5D3DDF621D59A9B50064D63F /* swift_alert_hud_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DDF591D59A9B50064D63F /* swift_alert_hud_error@3x.png */; };
-		5D3DDF631D59A9B50064D63F /* swift_alert_hud_info.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DDF5A1D59A9B50064D63F /* swift_alert_hud_info.png */; };
-		5D3DDF641D59A9B50064D63F /* swift_alert_hud_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DDF5B1D59A9B50064D63F /* swift_alert_hud_info@2x.png */; };
-		5D3DDF651D59A9B50064D63F /* swift_alert_hud_info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DDF5C1D59A9B50064D63F /* swift_alert_hud_info@3x.png */; };
-		5D3DDF661D59A9B50064D63F /* swift_alert_hud_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DDF5D1D59A9B50064D63F /* swift_alert_hud_success.png */; };
-		5D3DDF671D59A9B50064D63F /* swift_alert_hud_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DDF5E1D59A9B50064D63F /* swift_alert_hud_success@2x.png */; };
-		5D3DDF681D59A9B50064D63F /* swift_alert_hud_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DDF5F1D59A9B50064D63F /* swift_alert_hud_success@3x.png */; };
+		5D00B5A31D63FC89008388C2 /* SwiftHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D00B5A21D63FC89008388C2 /* SwiftHUD.bundle */; };
 		5D788EE81D59716400EEC01A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D788EE71D59716400EEC01A /* AppDelegate.swift */; };
 		5D788EEA1D59716400EEC01A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D788EE91D59716400EEC01A /* ViewController.swift */; };
 		5D788EED1D59716400EEC01A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D788EEB1D59716400EEC01A /* Main.storyboard */; };
@@ -27,15 +19,7 @@
 
 /* Begin PBXFileReference section */
 		21B794759700CD393F544B70 /* Pods-SwiftHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftHUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftHUD/Pods-SwiftHUD.debug.xcconfig"; sourceTree = "<group>"; };
-		5D3DDF571D59A9B50064D63F /* swift_alert_hud_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift_alert_hud_error.png; sourceTree = "<group>"; };
-		5D3DDF581D59A9B50064D63F /* swift_alert_hud_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift_alert_hud_error@2x.png"; sourceTree = "<group>"; };
-		5D3DDF591D59A9B50064D63F /* swift_alert_hud_error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift_alert_hud_error@3x.png"; sourceTree = "<group>"; };
-		5D3DDF5A1D59A9B50064D63F /* swift_alert_hud_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift_alert_hud_info.png; sourceTree = "<group>"; };
-		5D3DDF5B1D59A9B50064D63F /* swift_alert_hud_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift_alert_hud_info@2x.png"; sourceTree = "<group>"; };
-		5D3DDF5C1D59A9B50064D63F /* swift_alert_hud_info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift_alert_hud_info@3x.png"; sourceTree = "<group>"; };
-		5D3DDF5D1D59A9B50064D63F /* swift_alert_hud_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift_alert_hud_success.png; sourceTree = "<group>"; };
-		5D3DDF5E1D59A9B50064D63F /* swift_alert_hud_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift_alert_hud_success@2x.png"; sourceTree = "<group>"; };
-		5D3DDF5F1D59A9B50064D63F /* swift_alert_hud_success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swift_alert_hud_success@3x.png"; sourceTree = "<group>"; };
+		5D00B5A21D63FC89008388C2 /* SwiftHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SwiftHUD.bundle; sourceTree = "<group>"; };
 		5D788EE41D59716400EEC01A /* SwiftHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D788EE71D59716400EEC01A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D788EE91D59716400EEC01A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,16 +79,8 @@
 		5D788EF91D5971B500EEC01A /* SwiftHUD */ = {
 			isa = PBXGroup;
 			children = (
-				5D3DDF571D59A9B50064D63F /* swift_alert_hud_error.png */,
-				5D3DDF581D59A9B50064D63F /* swift_alert_hud_error@2x.png */,
-				5D3DDF591D59A9B50064D63F /* swift_alert_hud_error@3x.png */,
-				5D3DDF5A1D59A9B50064D63F /* swift_alert_hud_info.png */,
-				5D3DDF5B1D59A9B50064D63F /* swift_alert_hud_info@2x.png */,
-				5D3DDF5C1D59A9B50064D63F /* swift_alert_hud_info@3x.png */,
-				5D3DDF5D1D59A9B50064D63F /* swift_alert_hud_success.png */,
-				5D3DDF5E1D59A9B50064D63F /* swift_alert_hud_success@2x.png */,
-				5D3DDF5F1D59A9B50064D63F /* swift_alert_hud_success@3x.png */,
 				5D788EFA1D5971C300EEC01A /* SwiftHUD.swift */,
+				5D00B5A21D63FC89008388C2 /* SwiftHUD.bundle */,
 			);
 			path = SwiftHUD;
 			sourceTree = "<group>";
@@ -187,18 +163,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D3DDF671D59A9B50064D63F /* swift_alert_hud_success@2x.png in Resources */,
-				5D3DDF661D59A9B50064D63F /* swift_alert_hud_success.png in Resources */,
 				5D788EF21D59716400EEC01A /* LaunchScreen.storyboard in Resources */,
-				5D3DDF601D59A9B50064D63F /* swift_alert_hud_error.png in Resources */,
-				5D3DDF611D59A9B50064D63F /* swift_alert_hud_error@2x.png in Resources */,
-				5D3DDF621D59A9B50064D63F /* swift_alert_hud_error@3x.png in Resources */,
 				5D788EEF1D59716400EEC01A /* Assets.xcassets in Resources */,
-				5D3DDF651D59A9B50064D63F /* swift_alert_hud_info@3x.png in Resources */,
-				5D3DDF681D59A9B50064D63F /* swift_alert_hud_success@3x.png in Resources */,
-				5D3DDF631D59A9B50064D63F /* swift_alert_hud_info.png in Resources */,
 				5D788EED1D59716400EEC01A /* Main.storyboard in Resources */,
-				5D3DDF641D59A9B50064D63F /* swift_alert_hud_info@2x.png in Resources */,
+				5D00B5A31D63FC89008388C2 /* SwiftHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
