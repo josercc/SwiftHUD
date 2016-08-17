@@ -210,10 +210,8 @@ func SwiftImageWithName(imageName:String?) -> UIImage? {
         return nil
     }
     let name = "\(imageName)@\(Int(UIScreen.mainScreen().scale))x"
-    guard let path:String = NSBundle.mainBundle().pathForResource("SwiftHUD", ofType: "bundle") else {
-        return nil
-    }
-    guard let swiftBundle:NSBundle = NSBundle(path: path) else {
+
+    guard let swiftBundle:NSBundle = NSBundle(path:NSBundle(forClass: SwiftHUD.self).pathForResource("SwiftHUD", ofType: "bundle")! ) else {
         return nil
     }
     guard let imagePath:String = swiftBundle.pathForResource(name, ofType: "png") else {

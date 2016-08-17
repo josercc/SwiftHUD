@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SwiftHUD"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "HUD Alert Tip For Swift"
 
   # This description is used to generate tags and improve search results.
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "SwiftHUD/SwiftHUD/SwiftHUD/SwiftHUD.bundle"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
