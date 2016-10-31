@@ -36,23 +36,23 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 
 
         style.append(SwiftString(string: "Show Default Text Loading Style", complete: { () in
-            self.hud = SwiftHUD.show("Show Default Text Loading Style", view: self.view, style: SwiftHUDStyle.Loading)
+            self.hud = SwiftHUD.show("Show Default Text Loading Style", view: self.view, style: SwiftHUDStyle.loading)
         }))
 
         style.append(SwiftString(string: "Show Default Text Error Style", complete: { () in
-            self.hud = SwiftHUD.show("Show Default Text Error Style", view: self.view, style: SwiftHUDStyle.Error)
+            self.hud = SwiftHUD.show("Show Default Text Error Style", view: self.view, style: SwiftHUDStyle.error)
         }))
 
         style.append(SwiftString(string: "Show Default Text Success Style", complete: { () in
-            self.hud = SwiftHUD.show("Show Default Text Success Style", view: self.view, style: SwiftHUDStyle.Success)
+            self.hud = SwiftHUD.show("Show Default Text Success Style", view: self.view, style: SwiftHUDStyle.success)
         }))
 
         style.append(SwiftString(string: "Show Default Text Info Style", complete: { () in
-            self.hud = SwiftHUD.show("Show Default Text Info Style", view: self.view, style: SwiftHUDStyle.Info)
+            self.hud = SwiftHUD.show("Show Default Text Info Style", view: self.view, style: SwiftHUDStyle.info)
         }))
 
         style.append(SwiftString(string: "Show Default Text After Dismiss Complete", complete: { () in
-            self.hud = SwiftHUD.show("Show Default Text After Complete", view: self.view, style: SwiftHUDStyle.None, after: 2, complete: { (hud) in
+            self.hud = SwiftHUD.show("Show Default Text After Complete", view: self.view, style: SwiftHUDStyle.none, after: 2, complete: { (hud) in
                 UIAlertView(title: "This is Alert", message: nil, delegate: nil, cancelButtonTitle: "OK").show()
 
             })
@@ -76,31 +76,32 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             })
         }))
 
-        self.tableView = UITableView(frame: CGRectZero, style: .Plain)
+        self.tableView = UITableView(frame: CGRect.zero, style: .plain)
         self.tableView!.delegate = self
         self.tableView!.dataSource = self
         self.view.addSubview(self.tableView!)
 
         self.tableView!.snp_makeConstraints { (make) in
-            make.edges.equalTo(UIEdgeInsetsZero)
+            make.edges.equalTo(UIEdgeInsets.zero)
+            
         }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .Value1, reuseIdentifier: nil)
-        cell.textLabel?.text = style[indexPath.row].string
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
+        cell.textLabel?.text = style[(indexPath as NSIndexPath).row].string
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.font = UIFont.systemFontOfSize(12)
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 12)
         return cell
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return style.count
     }
 
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let string:SwiftString = style[indexPath.row]
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let string:SwiftString = style[(indexPath as NSIndexPath).row]
         string.toComplete()
     }
 
@@ -116,7 +117,7 @@ typealias SwiftStringComplete = (Void) -> Void
 class SwiftString {
     var string:String
     var complete:SwiftStringComplete
-    init(string:String, complete:SwiftStringComplete) {
+    init(string:String, complete:@escaping SwiftStringComplete) {
         self.string = string
         self.complete = complete
     }
