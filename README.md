@@ -12,7 +12,7 @@ HUD Tip Label  For Swift
 2. use Cocoapods 
 
    ```ruby
-   pod 'SwiftHUD'
+   pod 'ZSwiftHUD'
    ```
 
 ### Show
