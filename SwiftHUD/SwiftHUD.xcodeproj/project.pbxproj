@@ -109,12 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D788EF61D59716400EEC01A /* Build configuration list for PBXNativeTarget "SwiftHUD" */;
 			buildPhases = (
-				C6A096F95520A409B3FFBFDF /* 📦 Check Pods Manifest.lock */,
+				C6A096F95520A409B3FFBFDF /* [CP] Check Pods Manifest.lock */,
 				5D788EE01D59716400EEC01A /* Sources */,
 				5D788EE11D59716400EEC01A /* Frameworks */,
 				5D788EE21D59716400EEC01A /* Resources */,
-				DA13664CF707E3052143EAF6 /* 📦 Embed Pods Frameworks */,
-				E1E371E16EF180782BD45888 /* 📦 Copy Pods Resources */,
+				DA13664CF707E3052143EAF6 /* [CP] Embed Pods Frameworks */,
+				E1E371E16EF180782BD45888 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,29 +174,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C6A096F95520A409B3FFBFDF /* 📦 Check Pods Manifest.lock */ = {
+		C6A096F95520A409B3FFBFDF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DA13664CF707E3052143EAF6 /* 📦 Embed Pods Frameworks */ = {
+		DA13664CF707E3052143EAF6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,14 +204,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftHUD/Pods-SwiftHUD-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1E371E16EF180782BD45888 /* 📦 Copy Pods Resources */ = {
+		E1E371E16EF180782BD45888 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
