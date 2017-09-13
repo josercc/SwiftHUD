@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SwiftHUD"
-  s.version      = "2.0.3"
+  s.version      = "2.0.0"
   s.summary      = "HUD Alert Tip For Swift"
 
   # This description is used to generate tags and improve search results.

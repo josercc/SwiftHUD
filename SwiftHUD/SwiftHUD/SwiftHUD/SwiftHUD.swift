@@ -124,7 +124,7 @@ open class SwiftHUD {
                 self.settingInfoStyle(self.loadingView!)
         }
         view.addSubview(self.hudBackgroundView)
-        self.hudBackgroundView.snp_makeConstraints { (make) in
+        self.hudBackgroundView.snp.makeConstraints { (make) in
             make.center.equalTo(view)
         }
         if after > 0 {
@@ -142,9 +142,8 @@ open class SwiftHUD {
     fileprivate func settingNoneStyle() {
 
         self.hudBackgroundView.addSubview(self.titleLabel)
-
-        self.titleLabel.snp_makeConstraints { (make) in
-            make.edges.equalTo(EdgeInsets(top: 10, left: 10, bottom: -10, right: -10))
+        self.titleLabel.snp.makeConstraints { (make) in
+            make.edges.equalTo(UIEdgeInsets(top: 10, left: 10, bottom: -10, right: -10))
             make.width.lessThanOrEqualTo(MaxHUDWidth - 20)
         }
     }
@@ -153,14 +152,14 @@ open class SwiftHUD {
         self.hudBackgroundView.addSubview(view)
         self.hudBackgroundView.addSubview(self.titleLabel)
 
-        view.snp_makeConstraints { (make) in
+        view.snp.makeConstraints { (make) in
             make.top.equalTo(self.hudBackgroundView).offset(10)
             make.size.equalTo(CGSize(width: 30, height: 30))
             make.centerX.equalTo(self.hudBackgroundView)
         }
 
-        self.titleLabel.snp_makeConstraints { (make) in
-            make.top.equalTo(view.snp_bottom).offset(10)
+        self.titleLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(view.snp.bottom).offset(10)
             make.left.equalTo(self.hudBackgroundView).offset(10)
             make.right.equalTo(self.hudBackgroundView).offset(-10)
             make.bottom.equalTo(self.hudBackgroundView).offset(-10)

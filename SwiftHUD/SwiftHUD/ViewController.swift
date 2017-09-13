@@ -6,6 +6,7 @@
 //  Copyright © 2016年 张行. All rights reserved.
 //
 
+import SnapKit
 import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
@@ -80,8 +81,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         self.tableView!.delegate = self
         self.tableView!.dataSource = self
         self.view.addSubview(self.tableView!)
-
-        self.tableView!.snp_makeConstraints { (make) in
+        self.tableView!.snp.makeConstraints { (make) in
             make.edges.equalTo(UIEdgeInsets.zero)
             
         }
